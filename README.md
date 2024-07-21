@@ -13,3 +13,5 @@ dotnet ef database update
 (to run the code)
 dotnet build
 dotnet watch run
+
+Use swagger for checking API's
