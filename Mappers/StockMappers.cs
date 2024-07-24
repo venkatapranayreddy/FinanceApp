@@ -44,5 +44,24 @@ namespace api.Mappers
 
         }
 
+        public static Stock ToStockFromFMPService(this FMPStock fMPStock)
+        {
+
+
+            return new Stock {
+                
+                Symbol = fMPStock.symbol,
+                CompanyName = fMPStock.companyName,
+                Purchase = (decimal)fMPStock.price,
+                LastDiv = (decimal)fMPStock.lastDiv,
+                Industry = fMPStock.industry,
+                // FilePath = createStockRequestDto.FilePath,
+                MarketCap = fMPStock.mktCap,
+                
+
+            };
+
+        }
+
     }
 }
