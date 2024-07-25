@@ -10,6 +10,7 @@ namespace api.Models
    
     public class AppUser : IdentityUser
     {
+        // public DateTime? LastLoginTime { get; set; }
         public List<Portfolio> Portfolios { get; set; } = new List<Portfolio>();
 
     }
